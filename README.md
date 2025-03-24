@@ -3,6 +3,8 @@ CUSTOMER SEGMENTATION USING PURHASING PATTERNS
 The Dataset is extracted from the MSSQL adventureworks database analyzing customer sales orders as of July 2014
 
 ----------------------Query used to capture the data--------------------------------
+
+```
 DECLARE @end_date AS DATE = '2014-07-31';
 WITH OrderREF as
 (
@@ -78,6 +80,7 @@ from
 SegmentCust SC
 order by
 SC.CustomerID
+```
 
 ---
 
